@@ -13,3 +13,38 @@
 .header-text {
   padding-top: 50vh;
 }
+
+.header-text a {
+  color: white;
+}
+
+.navbar {
+  -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+  -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+  transition: padding-top 0.3s, padding-bottom 0.3s;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+a.nav-link {
+  color: white;
+}
+
+.navbar-logo {
+  height: 10vh;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.navbar-scrolled {
+  background-color: #212529;
+}
+
+.navbar-toggler {
+  font-size: 12px;
+  font-weight: 800;
+  padding: 13px;
+  text-transform: uppercase;
+  color: white;
+}
