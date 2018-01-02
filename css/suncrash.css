@@ -18,6 +18,9 @@
   color: white;
 }
 
+
+
+
 .navbar {
   -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
   -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -53,4 +56,88 @@ a.nav-link {
   text-transform: uppercase;
   color: white;
   height: 8vh;
+}
+
+
+
+
+.suncrash-content-1 {
+  background-color: #191919;
+  color: white;
+  margin: 0px;
+  border: none;  
+}
+
+
+
+
+.subscribe-area {
+  background-color: #f3cf26;
+  padding: 20px 0px;
+  margin: 0px;
+  border: none;
+}
+
+.email-label {
+  color: black;
+  font-size: 30px;
+  font-weight: none;
+}
+
+.subscribe-fields-area {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.subscribe-field {
+  margin: 5px;
+  width: 100%;
+}
+
+.subscribe-checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+
+.subscribe-checkbox {
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+  padding: 0px;
+}
+
+.subscribe-checkbox-label {
+  color: black;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.subscribe-input {
+  color: #000000;
+  border: solid 1px #dddddd;
+  background: white;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 24px;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-button {
+  background-color: #191919;
+  color: #f3cf26;
+  border: none;
+  padding: 3px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  border-radius: 12px;
 }
