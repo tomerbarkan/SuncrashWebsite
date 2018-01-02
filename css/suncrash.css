@@ -25,6 +25,12 @@
   border: none;
   background-color: transparent;
   color: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.navbar-link-bar {
+  margin-top: 3vh
 }
 
 a.nav-link {
@@ -32,13 +38,14 @@ a.nav-link {
 }
 
 .navbar-logo {
-  height: 10vh;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  height: 6vh;
+  position: center;
+  padding: 0px;
+  margin: 0px;
 }
 
 .navbar-scrolled {
-  background-color: #212529;
+  background-color: #191919;
 }
 
 .navbar-toggler {
