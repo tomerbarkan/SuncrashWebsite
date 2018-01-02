@@ -25,23 +25,21 @@
   border: none;
   background-color: transparent;
   color: white;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.navbar-link-bar {
-  margin-top: 3vh
+  padding: 5px 0px 5px 0px;
+  align-items: flex-end;
 }
 
 a.nav-link {
   color: white;
+  font-size: 24px;
 }
 
 .navbar-logo {
-  height: 6vh;
+  height: 8vh;
   position: center;
   padding: 0px;
   margin: 0px;
+  margin-left: 30px;
 }
 
 .navbar-scrolled {
@@ -49,9 +47,10 @@ a.nav-link {
 }
 
 .navbar-toggler {
-  font-size: 12px;
+  font-size: 24px;
   font-weight: 800;
   padding: 13px;
   text-transform: uppercase;
   color: white;
+  height: 8vh;
 }
