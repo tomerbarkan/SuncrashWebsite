@@ -40,7 +40,7 @@ h1 {
 }
 
 .header-text {
-  padding-top: 50vh;
+  padding-top: 40vh;
 }
 
 .header-text h3 {
@@ -145,6 +145,10 @@ a.nav-link-selected {
 .suncrash-content-3 {
   background-color: #333333;
   color: #dddddd;
+}
+
+.suncrash-content-2 a {
+  color: #0055aa;
 }
 
 
