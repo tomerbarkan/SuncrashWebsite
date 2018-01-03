@@ -12,8 +12,10 @@ h1 {
   text-align: center;
 }
 
-.title-separator-before {
-  padding-top: 30px;
+.suncrash-section {
+  padding:60px 0px 25px 0px;
+  margin: 0px;
+  border: none;
 }
 
 
@@ -31,12 +33,26 @@ h1 {
   padding-top: 50vh;
 }
 
-.header-text a {
+.header-text h3 {
   color: white;
 }
 
+.header-text a:hover {
+  color: white;
+  text-decoration: none;
+}
 
+.header-judgment-title h3 {
+  // Enter font for JASS here. Also font-size.
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+}
 
+.header-judgment-tagline h3 {
+  // Enter font for tagline here
+  font-size: 36px;
+  font-family: 'Caveat Brush', cursive;
+}
 
 .navbar {
   -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -51,7 +67,9 @@ h1 {
 
 a.nav-link {
   color: white;
-  font-size: 24px;
+  font-size: 22px;
+  font-family: 'Oswald', sans-serif;
+  margin-left: 20px;
 }
 
 .navbar-logo {
@@ -81,8 +99,6 @@ a.nav-link {
 .suncrash-content-1 {
   background-color: #191919;
   color: #dddddd;
-  margin: 0px;
-  border: none;
 }
 
 
@@ -90,9 +106,6 @@ a.nav-link {
 
 .subscribe-area {
   background-color: #f3cf26;
-  padding: 20px 0px;
-  margin: 0px;
-  border: none;
 }
 
 .email-label {
