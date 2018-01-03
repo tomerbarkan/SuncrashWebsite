@@ -20,10 +20,11 @@ p {
 h1 {
   padding-bottom: 20px;
   text-align: center;
+  font-size: 36px;
 }
 
 .suncrash-section {
-  padding:65px 0px 35px 0px;
+  padding:50px 0px 50px 0px;
   margin: 0px;
   border: none;
 }
