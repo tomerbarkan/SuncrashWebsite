@@ -66,10 +66,10 @@ h1 {
 
 .about-header {
   color: #ffffff;
-  background: url(../img/about-bg.jpg) no-repeat;
+  background: url(../img/about-bg3.jpg) no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
 }
 
@@ -249,6 +249,12 @@ h5.team-title {
   width: 211px;
   height: 272px;
 }
+
+.collaborators-title {
+  padding-top: 40px;
+}
+
+
 
 
 .footer {
