@@ -64,6 +64,14 @@ h1 {
   font-family: 'Caveat Brush', cursive;
 }
 
+.about-header {
+  color: #ffffff;
+  background: url(../img/about-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 400px;
+  width: 100vw;
+}
 
 
 
@@ -83,6 +91,10 @@ a.nav-link {
   font-size: 22px;
   font-family: 'Oswald', sans-serif;
   margin-left: 20px;
+}
+
+a.nav-link-selected {
+  color: #f3cf26;
 }
 
 .navbar-logo {
@@ -123,6 +135,11 @@ a.nav-link {
 .suncrash-content-1 {
   background-color: #191919;
   color: #dddddd;
+}
+
+.suncrash-content-2 {
+  background-color: #f3cf26;
+  color: #191919;
 }
 
 
@@ -189,6 +206,39 @@ a.nav-link {
   font-size: 20px;
   margin: 4px 2px;
   border-radius: 12px;
+}
+
+
+
+
+.team-entry {
+  display: flow;
+  justify-content: center;
+  flex-direction: row;
+  margin: 40px 0px;
+}
+
+.team-entry-first {
+  margin-top: 0px;
+}
+
+.team-entry h3 {
+  margin: 0px;
+  font-size: 22px;
+  margin-bottom: 2px;
+}
+
+.team-entry p {
+}
+
+h5.team-title {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.team-img {
+  width: 211px;
+  height: 272px;
 }
 
 
