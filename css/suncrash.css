@@ -1,4 +1,21 @@
 
+.center-content {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+}
+
+h1 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.title-separator-before {
+  padding-top: 30px;
+}
+
 
 .header {
     color: #ffffff;
@@ -63,9 +80,9 @@ a.nav-link {
 
 .suncrash-content-1 {
   background-color: #191919;
-  color: white;
+  color: #dddddd;
   margin: 0px;
-  border: none;  
+  border: none;
 }
 
 
@@ -122,11 +139,6 @@ a.nav-link {
   width: 100%;
   padding-left: 10px;
   font-size: 24px;
-}
-
-.center-content {
-  display: flex;
-  justify-content: center;
 }
 
 .subscribe-button {
