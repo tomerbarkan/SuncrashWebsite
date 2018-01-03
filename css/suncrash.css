@@ -69,7 +69,7 @@ h1 {
   background: url(../img/about-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 400px;
+  height: 60vh;
   width: 100vw;
 }
 
@@ -140,6 +140,11 @@ a.nav-link-selected {
 .suncrash-content-2 {
   background-color: #f3cf26;
   color: #191919;
+}
+
+.suncrash-content-3 {
+  background-color: #333333;
+  color: #dddddd;
 }
 
 
