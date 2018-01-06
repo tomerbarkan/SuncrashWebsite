@@ -275,11 +275,8 @@ h5.team-title {
   display: flow;
   justify-content: center;
   flex-direction: row;
-  margin: 40px 0px;
-}
-
-.blog-entry-first {
-  margin-top: 0px;
+  margin: 0px;
+  margin-bottom: 40px;
 }
 
 .blog-entry h3 {
