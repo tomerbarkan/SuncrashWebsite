@@ -276,6 +276,8 @@ h5.team-title {
   justify-content: center;
   flex-direction: row;
   margin: 0px;
+  min-height: 240px;
+  margin-bottom: 20px;
 }
 
 .blog-entry h3 {
@@ -296,7 +298,6 @@ h5.blog-title {
 .blog-entry-img {
   width: 300px;
   height: 169px;
-  margin-bottom: 80px;  
 }
 
 
