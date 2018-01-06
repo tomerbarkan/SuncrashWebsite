@@ -146,6 +146,10 @@ a.nav-link-selected {
   color: #dddddd;
 }
 
+.suncrash-content-1 h3 {
+  color: #dddddd;
+}
+
 .suncrash-content-2 {
   background-color: #f3cf26;
   color: #191919;
@@ -263,6 +267,40 @@ h5.team-title {
   padding-top: 40px;
 }
 
+
+
+
+
+.blog-entry {
+  display: flow;
+  justify-content: center;
+  flex-direction: row;
+  margin: 40px 0px;
+}
+
+.blog-entry-first {
+  margin-top: 0px;
+}
+
+.blog-entry h3 {
+  margin: 0px;
+  font-size: 22px;
+  margin-bottom: 2px;
+}
+
+.blog-entry a:hover {
+  text-decoration: none;
+}
+
+h5.blog-title {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.blog-entry-img {
+  width: 300px;
+  height: 169px;
+}
 
 
 

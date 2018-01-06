@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About Suncrash</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:url" content="http://www.suncrash.com"/>
+
+  <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/suncrash.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush%7CMontserrat:900%7COpen+Sans%7COswald:600" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-toggleable-sm bg-faded fixed-top navbar-scrolled">
+    <a class="navbar-brand navbar-logo" href="/"><img src="/img/suncrash-logo.png" alt="Suncrash" class="navbar-logo"></a>
+    <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+    </button>
+
+    <div class="container">
+      <div class="collapse navbar-collapse navbar-link-bar" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="http://www.judgmentgame.com">Judgment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/about.html">About</a>
+          </li>
+          <li class="nav-item center-vcontent">
+            <div class="social-links">
+              <a href="https://www.facebook.com/suncrashstudio" target="_blank"><img src="/img/ico-facebook.png" class="img-responsive navbar-social-icon"/></a>
+              <a href="https://twitter.com/suncrashstudio" target="_blank"><img src="/img/ico-twitter.png" class="img-responsive navbar-social-icon"/></a>
+              <a href="https://discord.gg/yH6v4uR" target="_blank"><img src="/img/ico-discord.png" class="img-responsive navbar-social-icon"/></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="header" class="nav-padding">
+  </section>
+
+  <section class="suncrash-content-1 suncrash-section suncrash-blog">
+    <div class="container">
+
+      <div class="row center-content">
+        <h1>Dev Diary: Health and Healing</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Good day survivors. The holiday season is beyond us and everyone is back to work, busy working on the on the next update for Judgement, and ultimately the final version of the game.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            This article is the first in a new segment of developer diaries, where we hope to give you insight into upcoming features, changes, and mechanics. Each time we will try to explain our design process and decision making, and we are looking forward to reading your feedback.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Today, I'm going to talk about survivor health and healing.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Want to stay up to date? <a href="http://suncrash.us11.list-manage.com/subscribe?u=a101c0f9b1996c3589e921e3e&nbsp;id=07c883387f">Subscribe for updates</a><br>
+Or follow us on <a href="http://www.facebook.com/judgmentgame">Facebook</a> or <a href=https://discord.gg/yH6v4uR>join our Discord</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="damage1.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <h3 class="blog-subtitle">History of Healing in Judgment</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            In the past, an injured task force without any decent source of healing was forced to return to the camp for healing. This is not necessarily bad – going back to the camp after every few missions to replenish and recover sounds good, but doing so after every serious battle is bothersome. So, we introduced some more field healing options and capped how many times they can be used per combat, to make sure they can’t be exploited. The result was that players would ‘farm’ biomes by going into them, healing, and leaving. This became an even bigger issue as we introduced more and more non-consumable healing abilities, such as the Physician skill and the Holy Armor heal ability.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            We had to stop that exploit, and did so by introducing a limit – you can’t heal yourself for more HP than you had when the battle started. This, however, had the misfortune of being unintuitive and not at all transparent and caused a lot of frustration and confusion. We also knew we wanted healing abilities to be more powerful, less mundane and more important. So, we went back to the drawing board and came up with the concept of permanent versus temporary damage.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <h3 class="blog-subtitle">Upcoming Changes</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            As of the upcoming Update 15, during combat, survivors will suffer damage and use healing as in previous versions, however, now most of the damage they suffer will be temporary damage. Temporary damage can be healed by combat abilities and is automatically restored at the end of every battle.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            A small percent of the damage, however, will be permanent damage. Permanent damage will not be restored during combat, and will not be automatically healed after combat. Instead, it can only be recovered by rest or by using medicine at the infirmary.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="damage2.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            As you can see, the health bars are modified to show temporary and permanent damage separately. This system has the advantage of being immediately clear and intuitive but also opens the door for more strategic depth. Some possibilities include unique rituals that quickly recover permanent damage and dangerous enemies that do more lasting harm.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Finally, players can send their task forces deep into enemy territory and be able to enjoy several missions before they must turn back since most of the damage will be healed between battles.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="damage3.jpg">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="container">
+      <div class="row center-content">
+        <a href="https://www.facebook.com/suncrashstudio" target="_blank"><img src="/img/ico-facebook.png" class="img-responsive footer-social-icon"/></a>
+        <a href="https://twitter.com/suncrashstudio" target="_blank"><img src="/img/ico-twitter.png" class="img-responsive footer-social-icon"/></a>
+        <a href="https://discord.gg/yH6v4uR" target="_blank"><img src="/img/ico-discord.png" class="img-responsive footer-social-icon"/></a>
+      </div>
+      <div class="row center-content">
+        <p>&copy; 2018 Suncrash LTD</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="/js/suncrash.js"></script>
+
+</body>
+</html>
