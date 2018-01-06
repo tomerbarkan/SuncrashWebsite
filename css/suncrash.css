@@ -30,6 +30,7 @@ h1 {
 }
 
 
+
 .header {
     color: #ffffff;
     background-repeat: no-repeat;
@@ -87,6 +88,11 @@ h1 {
   color: white;
   padding: 5px 0px 5px 0px;
   align-items: flex-end;
+}
+
+.nav-padding {
+  height: 8vh;
+  padding: 5px 0px 5px 0px;
 }
 
 a.nav-link {
@@ -258,6 +264,21 @@ h5.team-title {
 }
 
 
+
+
+.blog-image {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.blog-subtitle {
+  padding-top: 10px;
+}
+
+.blog-video {
+  width:100%;
+  padding-bottom: 30px;
+}
 
 
 .footer {
