@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dev Diary: Traders</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Dev Diary: Traders"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:image" content="http://www.suncrash.com/blog/dev_diary_traders/screenshot-2018-03-15-traders.jpg"/>
+  <meta property="og:site_name" content="Suncrash"/>
+  <meta property="og:description" content="In our second development log we tell you all about the Traders in Judgment, the problems we had with this feature, and how we solved them."/>
+  <meta property="fb:admins" content="tomerbarkan"/>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@suncrashstudio" />
+  <meta name="twitter:creator" content="@suncrashstudio" />
+  <meta name="twitter:title" content="Dev Diary: Traders">
+  <meta name="twitter:description" content="In our second development log we tell you all about the Traders in Judgment, the problems we had with this feature, and how we solved them.">
+  <meta name="twitter:image" content="http://www.suncrash.com/blog/dev_diary_traders/screenshot-2018-03-15-traders.jpg">
+
+  <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/suncrash.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush%7CMontserrat:900%7COpen+Sans%7COswald:600" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-toggleable-sm bg-faded fixed-top navbar-scrolled">
+    <a class="navbar-brand navbar-logo" href="/"><img src="/img/suncrash-logo.png" alt="Suncrash" class="navbar-logo"></a>
+    <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+    </button>
+
+    <div class="container">
+      <div class="collapse navbar-collapse navbar-link-bar" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="http://www.judgmentgame.com">Judgment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/about.html">About</a>
+          </li>
+          <li class="nav-item center-vcontent">
+            <div class="social-links">
+              <a href="https://www.facebook.com/suncrashstudio" target="_blank"><img src="/img/ico-facebook.png" class="img-responsive navbar-social-icon"/></a>
+              <a href="https://twitter.com/suncrashstudio" target="_blank"><img src="/img/ico-twitter.png" class="img-responsive navbar-social-icon"/></a>
+              <a href="https://discord.gg/yH6v4uR" target="_blank"><img src="/img/ico-discord.png" class="img-responsive navbar-social-icon"/></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="nav-padding">
+  </section>
+
+  <section class="suncrash-content-1 suncrash-section suncrash-blog">
+    <div class="container">
+
+      <div class="row center-content blog-title">
+        <h1>Dev Diary: Traders</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2 blog-date">
+          <h5>15 March, 2018</h5>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Greetings survivors, and welcome to the second installment in our dev-diary series. Today, we are going to focus on the trader algorithm improvement that was introduced in Update 15.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Want to stay up to date? <a href="http://subscribe.suncrash.com" target="_blank">Subscribe for updates</a><br>
+You can also follow us on <a href="http://www.facebook.com/judgmentgame" target="_blank">Facebook</a> or <a href="https://discord.gg/yH6v4uR" target="_blank">join our Discord</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="screenshot-2018-03-15-trader-event.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <h3 class="blog-subtitle">The First Traders</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            We initially released the trading feature in Update 13. For the first time in Judgement, trading allowed players to engage in economics, selling surplus items and purchasing rare resources or powerful equipment that would help them battle the demonic horde.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            While the feature was well received, the overwhelming feedback was that most items sold by the traders were either useless or too expensive. So expensive, in fact, that many players didn’t bother with the trading mechanics at all.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Trading was meant to be a secondary channel to receiving certain necessary goods. Getting a trader visit was supposed to be an event players looked forward to, and one of the biggest rewards for being in good relationships with neighboring settlements. Clearly, we wanted traders to be useful.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Trader prices were designed to be high, so that this route is actually secondary, and only used occasionally to get higher tier equipment. The main progress path was still to be achieved through research, crafting and scavenging. Getting higher tier equipment is one of the more challenging milestones in Judgment, where players need to get higher level research resources while still using lower level equipment. If players could easily buy their way to the next tier, that challenge would be lost. So, how do we make traders meaningful and useful, without breaking the balance?
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <h3 class="blog-subtitle">Traders v2.0</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            The first step was to clearly identify the problem. The core problem, as we saw it, was not necessarily that the prices were too high, but that players had nothing they really wanted, such that they would be willing to pay the high prices, being offered to them. Players often got lower tier gear and resources, those that they could already craft themselves, and were unwilling to pay high prices for them.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Once we identified the issue, we attacked it on three fronts. First, we increased the selling price of equipment. It is now sold at 25% of the buying price, as opposed to 10% before Update 15. This would make it a bit more feasible to get enough scraps for an upgrade by selling lower tier equipment.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Second, we added some new items that are helpful, but not absolutely essential (as opposed to higher tier equipment), that can only be obtained through traders. You can find journals that will let your survivors learn new skills, gain experience, or even reset their skill points.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="screenshot-2018-03-15-trader-special-item.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            The third part of the solution was the most complicated one - a new algorithm that is meant to predict what the player might really be interested in buying, and offering some of these items at the traders.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Originally, the items a trader offered were a random selection from the items in a given tier, that was based on the current day in the game. This meant that when a player progressed faster than the demons, they would be offered useless, low tier equipment. If they advanced slower and were at a disadvantage, they would get very expensive high level equipment that they could rarely afford.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <h3 class="blog-subtitle">Desirability Calculations</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            To improve that, we designed the algorithm from scratch and came up with an important variable: Desirability, our way to try and gauge how much a player would desire to obtain an item, at their current state. Every item that a trader might offer is analyzed, and then every trader offers at least a few items with very high desirability.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            So how is desirability calculated? Let’s take a weapon as an example. Clearly, players would love to get their hands on a weapon that is better than anything they have, so all weapons that are one tier above the player’s current research tier get a bonus to their desirability. They are also less likely to want to spend a lot of money on weapons that they can make themselves, as it is more cost-effective to craft them. Weapons get a penalty to desirability when a player has the research required to craft them, and an even bigger penalty if the crafting station and resources are available.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Similar calculations are used for raw materials. If a player has none of this material, and the material’s tier is in line with what we assume the player needs to make their equipment, they get a boost to desirability. However, if a player already has a large stock of this resource, or can craft as many as are needed, there is a penalty.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            The result is a system that tries to ensure that every trader offers the player some equipment they could really use (and usually not get anywhere else), and some materials they are currently lacking.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="screenshot-2018-03-15-traders.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            So far, our data and player feedback shows a major improvement. Traders are now actually used to upgrade equipment and get other unique items, but only so much that they provide a helping hand towards reaching the higher tier naturally so that players can craft their own higher tier equipment. This is exactly what we were aiming for. Feel the higher tier fights are too difficult? Then spend some more time on your base economy, sell a few lower tier resources and equipment, then buy a single piece of higher tier gear which can make the difference between victory and defeat, when scavenging for those pesky research kits that you need to craft your own high level equipment. Or maybe just buy that first research kit directly.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            The traders algorithm is also moddable, modders can tinker with the bonuses and penalties to desirability, how many items a trader offers, and how many of these items are of high desirability.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Have your own insights and ideas on the traders’ mechanic? Let us know!
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="container">
+      <div class="row center-content">
+        <a href="https://www.facebook.com/suncrashstudio" target="_blank"><img src="/img/ico-facebook.png" class="img-responsive footer-social-icon"/></a>
+        <a href="https://twitter.com/suncrashstudio" target="_blank"><img src="/img/ico-twitter.png" class="img-responsive footer-social-icon"/></a>
+        <a href="https://discord.gg/yH6v4uR" target="_blank"><img src="/img/ico-discord.png" class="img-responsive footer-social-icon"/></a>
+      </div>
+      <div class="row center-content">
+        <p>&copy; 2018 Suncrash LTD</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="/js/suncrash.js"></script>
+
+</body>
+</html>
