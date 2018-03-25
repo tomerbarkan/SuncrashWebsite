@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dev Diary: New Professions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Dev Diary: New Professions"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:image" content="http://www.suncrash.com/blog/dev_diary_new_professions/screenshot-2018-03-23-survivor selection.jpg"/>
+  <meta property="og:site_name" content="Suncrash"/>
+  <meta property="og:description" content="As full release approaches, we expose some of the new content that will be added, starting with the new survivor professions."/>
+  <meta property="fb:admins" content="tomerbarkan"/>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@suncrashstudio" />
+  <meta name="twitter:creator" content="@suncrashstudio" />
+  <meta name="twitter:title" content="Dev Diary: New Professions">
+  <meta name="twitter:description" content="As full release approaches, we expose some of the new content that will be added, starting with the new survivor professions.">
+  <meta name="twitter:image" content="http://www.suncrash.com/blog/dev_diary_new_professions/screenshot-2018-03-23-survivor selection.jpg">
+
+  <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/suncrash.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush%7CMontserrat:900%7COpen+Sans%7COswald:600" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-toggleable-sm bg-faded fixed-top navbar-scrolled">
+    <a class="navbar-brand navbar-logo" href="/"><img src="/img/suncrash-logo.png" alt="Suncrash" class="navbar-logo"></a>
+    <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+    </button>
+
+    <div class="container">
+      <div class="collapse navbar-collapse navbar-link-bar" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="http://www.judgmentgame.com">Judgment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/about.html">About</a>
+          </li>
+          <li class="nav-item center-vcontent">
+            <div class="social-links">
+              <a href="https://www.facebook.com/suncrashstudio" target="_blank"><img src="/img/ico-facebook.png" class="img-responsive navbar-social-icon"/></a>
+              <a href="https://twitter.com/suncrashstudio" target="_blank"><img src="/img/ico-twitter.png" class="img-responsive navbar-social-icon"/></a>
+              <a href="https://discord.gg/yH6v4uR" target="_blank"><img src="/img/ico-discord.png" class="img-responsive navbar-social-icon"/></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="nav-padding">
+  </section>
+
+  <section class="suncrash-content-1 suncrash-section suncrash-blog">
+    <div class="container">
+
+      <div class="row center-content blog-title">
+        <h1>Dev Diary: New Professions</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2 blog-date">
+          <h5>23 March, 2018</h5>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Greetings, survivors. As we get closer to the day of Judgment (pun intended), we feel it is time to highlight some of the content you can expect to see in the full version. You will be facing enemies that are far more dangerous and powerful than you ever have before – but you will also have access to a whole range of new equipment, rituals, research options and more.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Today, we would like to talk about the strongest weapon in the game – the survivors themselves. More specifically, the new professions that will be added in the full release. Designing and implementing them has been a tough, but rewarding, challenge.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Want to stay up to date? <a href="http://subscribe.suncrash.com" target="_blank">Subscribe for updates</a><br>
+You can also follow us on <a href="http://www.facebook.com/judgmentgame" target="_blank">Facebook</a> or <a href="discord.judgmentgame.com" target="_blank">join our Discord</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="screenshot-2018-03-23-survivor selection.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <h3 class="blog-subtitle">Three New Professions</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            The design task called for three brand new professions that will complement the previous roster for a total of nine professions. In addition, the Defender profession needed work – it was originally added on a whim without a proper design process, and ended up feeling like a copy of the Fighter profession with different level-up skills.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            A profession in Judgement is composed of two main elements – a pool of unique, profession-specific starting skills as well as eight level-up skill paths. Every survivor receives one random profession-specific starting skill – those often represent the survivor’s background before the apocalypse and can be anything from ‘scientist’ to ‘ex-cop’. In addition, as a survivor gains experience and levels up, they can advance in any of the eight skill paths available to their profession.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Adding new professions to Judgement is not an easy task. Due to the random nature of the game, there are certain requirements:
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            <ul><br>
+<li>Every team of survivors needs to be at least semi-functional, so even if you have a starting team of all fighters or all engineers, you still won't be at too big of a disadvantage.</i><br>
+<li>Starting skills, which are the only random element here, need to be relatively powerful so that players have to adapt to the situation instead of using the same strategy every playthrough.</li><br>
+<li>All skill paths must be well divided across all professions, so you will always have a reasonable chance to have at least some survivors that are good at critical tasks, such as research or farming.</li><br>
+<li>All skill paths must be well represented so that there is no dominated strategy (a strategy that is always worse than the alternatives) and all upgrade paths are viable. This includes making sure there are adequate starting skills that can complement all skill paths of a given profession.</li><br>
+</ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            So, the new professions must be distinct enough to be interesting, while maintaining the general balance of the game, not being too powerful as to make the game too easy, or too unique so that not having this profession/skill would put you at a disadvantage. Obviously, they also have to fit the thematic style of Judgment.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="screenshot-2018-03-23-skills.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="profession_academic.png">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <h3 class="blog-subtitle">The Academic</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            With all of that in mind, we first approached the task by trying to identify where our previous roster was lacking in terms of popular and important skill paths that weren’t common enough. The first thing we realized is that we needed more professions that are good at research, both science and occult - and from that, we came up with the Academic.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            The Academic is best described as an interesting mix between the engineer and the priest professions, which will makes it highly desirable to most players. Not only for its proficiency in research, the Academic will also be sought after for its access to two of the most important production skills in the game – crafting and farming.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            From a thematic point of view, the academic provides a chance to include a whole range of interesting backgrounds as starting skills, such as mathematicians and necromancers.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="screenshot-2018-03-23-academic-research.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="profession_artisan.png">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <h3 class="blog-subtitle">The Artisan</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            The next profession, The Artisan, went through several revisions before we were happy with it. The original plan called for the artisan to be one of the most useful jack-of-all-trades camp followers, excelling in many of the various production skills.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            The result, however, was that the artisan felt a bit too lopsided and often too similar to the Engineer. Going back to the drawing board, we ended up designing the artisan to be a different sort of jack-of-all-trades. It combines two important production skills - crafting and gathering - along with mining, making sure the artisan itself has access to most of the fundamentals that are needed to keep your industry working efficiently. The rest of the skills include some of the more standard weapon skills, such as pistols and rifles, in addition to defensive skills that boost resistance and health. The result is a useful camper that can also protect your base when needed.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            The Artisan starting skills also fit the world of Judgement, where survivors had real lives before the invasion - those would be dock workers and oil miners, factory workers and laborers.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="screenshot-2017-05-24-crafting-priorities-new.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="profession_scout.png">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <h3 class="blog-subtitle">The Scout</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            The third and final profession we added, the Scout, is a small departure from the other professions in that it has access to a new skill path unique to this profession: scouting. Scouting is the only skill path that can benefit an entire task force.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Scouting can give your task force benefits such as faster travel speed and longer vision, and can even offer bonuses to the scout’s attack range. Since the scout also has the marksmanship skill path, these survivors have the potential to get a total of +2 to their weapon's range – a truly interesting combination.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            The scout differs from the survivalist by having less defensive and offensive skills, but more weapon skills. It’s also the only profession other than the fighter and defender that can specialize in automatic weapons.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            The Scout's starting skills are also varied, ranging from trained rangers to hobos.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="screenshot-2018-03-23-scout world map.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="profession_defender.png">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <h3 class="blog-subtitle">The Defender</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Finally, the Defender was significantly reworked. The defender has fewer weapon skills than the fighter now, but can access all four defensive skill paths, including a path specializing in melee and a new skill path that increases a survivor’s armor values. In addition, the defender is an archetype that comes loaded with starting skills that complement its defensive capabilities and give various benefits that help it avoid damage and allow it to withstand more punishment, such as the SWAT officer that gets a bonus to protection from cover, the bouncer, and a bodyguard that takes less damage from all attacks.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            The result is that the fighter tends to be a better all-around soldier while the defender is your ultimate front-line tank. All in all, we think this profession serves its purpose a lot better now.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <h3 class="blog-subtitle"><span class="separator"/></h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            I hope you enjoyed this short sneak peek into our thought processes and what you can expect to see in the release version – more options, more possibilities, and more combinations.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            As always, we welcome feedback and would love to hear your thoughts.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="container">
+      <div class="row center-content">
+        <a href="https://www.facebook.com/suncrashstudio" target="_blank"><img src="/img/ico-facebook.png" class="img-responsive footer-social-icon"/></a>
+        <a href="https://twitter.com/suncrashstudio" target="_blank"><img src="/img/ico-twitter.png" class="img-responsive footer-social-icon"/></a>
+        <a href="https://discord.gg/yH6v4uR" target="_blank"><img src="/img/ico-discord.png" class="img-responsive footer-social-icon"/></a>
+      </div>
+      <div class="row center-content">
+        <p>&copy; 2018 Suncrash LTD</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="/js/suncrash.js"></script>
+
+</body>
+</html>
