@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dev Diary: Designing Endgame Equipment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="apocalypse, colony-sim, indie, judgement, judgment, simulation, strategy, suncrash, survival, gamedev, game development, games, gaming"/>
+  <meta name="description" content="Another peek into full release content and into our design and thought process. This time - endgame weapons, armor and other equipment."/>
+  <link rel="shortcut icon" type="image/png" href="/favico.ico"/>
+  <link rel="icon" type="image/png" href="/favico.ico"/>
+
+  <meta property="og:title" content="Dev Diary: Designing Endgame Equipment"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:image" content="http://www.suncrash.com/blog/dev_diary_endgame_equipment/screenshot-2018-04-06-crafting priorities with hover.jpg"/>
+  <meta property="og:site_name" content="Suncrash"/>
+  <meta property="og:description" content="Another peek into full release content and into our design and thought process. This time - endgame weapons, armor and other equipment."/>
+  <meta property="fb:admins" content="tomerbarkan"/>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@suncrashstudio" />
+  <meta name="twitter:creator" content="@suncrashstudio" />
+  <meta name="twitter:title" content="Dev Diary: Designing Endgame Equipment">
+  <meta name="twitter:description" content="Another peek into full release content and into our design and thought process. This time - endgame weapons, armor and other equipment.">
+  <meta name="twitter:image" content="http://www.suncrash.com/blog/dev_diary_endgame_equipment/screenshot-2018-04-06-crafting priorities with hover.jpg">
+
+  <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/suncrash.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush%7CMontserrat:900%7COpen+Sans%7COswald:600" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-toggleable-sm bg-faded fixed-top navbar-scrolled">
+    <a class="navbar-brand navbar-logo" href="/"><img src="/img/suncrash-logo.png" alt="Suncrash" class="navbar-logo"></a>
+    <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+    </button>
+
+    <div class="container">
+      <div class="collapse navbar-collapse navbar-link-bar" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="http://www.judgmentgame.com">Judgment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/about.html">About</a>
+          </li>
+          <li class="nav-item center-vcontent">
+            <div class="social-links">
+              <a href="https://www.facebook.com/suncrashstudio" target="_blank"><img src="/img/ico-facebook.png" class="img-responsive navbar-social-icon"/></a>
+              <a href="https://twitter.com/suncrashstudio" target="_blank"><img src="/img/ico-twitter.png" class="img-responsive navbar-social-icon"/></a>
+              <a href="https://discord.gg/yH6v4uR" target="_blank"><img src="/img/ico-discord.png" class="img-responsive navbar-social-icon"/></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="nav-padding">
+  </section>
+
+  <section class="suncrash-content-1 suncrash-section suncrash-blog">
+    <div class="container">
+
+      <div class="row center-content blog-title">
+        <h1>Dev Diary: Designing Endgame Equipment</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2 blog-date">
+          <h5>6 April, 2018</h5>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Welcome survivors, to another Judgment dev diary.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            In our last diary I focused on the new professions that will be introduced in the full release. Today I want to continue this trend by talking about endgame weapons and armor.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Want to stay up to date? <a href="http://subscribe.suncrash.com" target="_blank">Subscribe for updates</a><br>
+You can also follow us on <a href="http://www.facebook.com/judgmentgame" target="_blank">Facebook</a> or <a href="discord.judgmentgame.com" target="_blank">join our Discord</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="screenshot-2018-04-06-crafting priorities with hover.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <h3 class="blog-subtitle">Equipment and Tiers</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            In Judgment, most weapons, armor, and accessories are gated behind tier-based research that requires unique research materials. These materials, in turn, are most commonly found in the outside world, protected by higher-tier enemies - so you need to defeat tier 3 enemies before you can unlock tier 3 research. Acquiring the necessary research materials and advancing to the next research tier is one of the more challenging milestones in the game..
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            The current Early Access version includes the first three tiers. The release version will include new items in existing tiers and two additional tiers, essentially doubling the amount of content in the game. These are accompanied by new, more dangerous foes, the very lords of hell, but I will write about those in a future dev diary. For now, I want to discuss your tools for fighting those demons.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <h3 class="blog-subtitle">New Weapons</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            The task to design new weapons for the full release was twofold. It included both coming up with convincing and interesting weapons, but also finding ways to fill up holes we had in our previous weapon roster.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="screenshot-2018-04-06-combat-with-explosion.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Many of our survivors have starting skills that provide benefits when using certain types of weapons – such as bonuses to pistols, tech weapons, automatic weapons and such. However, some categories didn’t have enough useful weapons to complement them.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Finding suitable weapons to fit into the previous three tiers had been fun, and resulted in some cool new weapons such as the Holy Preacher and the Witchbane - new lower tier occult weapons.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            The main task, however, was designing endgame weapons. The goal here is not just to make more powerful and interesting weapons – but to slowly add more tactical options as the player progresses in the game. The lords of hell can not be defeated by sheer brute force - it will also require the cunning application of abilities and powers. Higher tier weapons do not rely on more damage alone, but also on stronger and more diverse effects and abilities.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Some of these new weapons are simply a linear progression of weapons you already know – the Sniper Rifle leads to the 50-Caliber Rifle and finally to an advanced, tech-based sniper rifle that fires guided projectiles and offers incredible range and accuracy. Similarly, the Coilgun will be replaced by the mightier Railgun as you advance in the tiers, then by a Laser Rifle and a Beam Cannon – all adding increasingly powerful focused shot abilities.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Other weapons offer far more interesting options. The tier 5 Bazooka has low fire rate and accuracy but is buffed by an incredibly powerful splash damage effect that makes it a superb weapon against tight groups of demons. The Minigun will quickly dispatch hordes of low-health enemies such as hell hounds, but will prove less effective against more robust opponents. The Incinerator and Acid Gun will deal splash damage that applies a burning effect, reducing the armor of the demon horde and softening them for an effective long-range attack.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="screenshot-2018-04-06-combat night.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            It was also a chance to add weapons that had some interesting and unorthodox inspiration, including allusions to theology, such as the the Angelic Arbalest, a divine bow forged in heaven. Another interesting creation is the the Acid Gun, a steampunk-esque invention hailing back to the days of alchemy, now crafted with advanced technology.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <h3 class="blog-subtitle">Powerful New Armors</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            Adding additional armor choices had been a somewhat more challenging task, so I focused on the end goal – adding armors that aren’t just better, but also open new tactical options and active combat abilities. Thinking about what sort of abilities I wanted to be granted by the new armor pieces helped me, in turn, come up with the armor choices themselves.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <img class="img-responsive blog-image" src="screenshot-2018-04-06-base with armor.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            So, in tier 5, you will unlock the Combat Suit that gives a temporary buff to damage while the Rocket Suit gives a significant boost to movement speed. Unlike the Holy Armor in tier 2, a Paladin’s Vestment does not grant the active bless ability, but has a bless aura that allows the champion to lead troops into battle. The Armor of Souls is a new dark armor that grants a passive buff to damage, while Gaia's Wrath is an incredibly rare and powerful nature armor that can make its wearer nearly invulnerability to damage, temporarily, at the cost of speed.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <p>
+            In conclusion, the full release comes with dozens of new weapons and armor – we only touched a fragment of what we plan to include. Keep following our dev diaries for more insight into the new content coming in the full release and our thought processes designing it.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="container">
+      <div class="row center-content">
+        <a href="https://www.facebook.com/suncrashstudio" target="_blank"><img src="/img/ico-facebook.png" class="img-responsive footer-social-icon"/></a>
+        <a href="https://twitter.com/suncrashstudio" target="_blank"><img src="/img/ico-twitter.png" class="img-responsive footer-social-icon"/></a>
+        <a href="https://discord.gg/yH6v4uR" target="_blank"><img src="/img/ico-discord.png" class="img-responsive footer-social-icon"/></a>
+      </div>
+      <div class="row center-content">
+        <p>&copy; 2018 Suncrash LTD</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="/js/suncrash.js"></script>
+
+</body>
+</html>
