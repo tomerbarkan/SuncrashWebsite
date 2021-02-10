@@ -15,6 +15,15 @@
   --landing-form-bg: #111111;
 }
 
+body.fixed-navbar {
+  padding-top: 60px;
+}
+@media (max-width: 979px) {
+  body.fixed-navbar {
+    padding-top: 25px;
+  }
+}
+
 
 .center-content {
   display: flex;
@@ -142,6 +151,18 @@ a.nav-link-selected {
   text-transform: uppercase;
   color: white;
   height: 8vh;
+}
+
+.footer {
+  background-color: var(--ligher-bg-color);
+  color: var(--text-color);
+  padding: 40px 0px 20px 0px;
+}
+
+.footer-social-icon {
+  height: 32px;
+  width: 32px;
+  margin: 15px;
 }
 
 .social-links {
@@ -334,17 +355,4 @@ h5.blog-title {
 .blog-video {
   width:100%;
   padding-bottom: 30px;
-}
-
-
-.footer {
-  background-color: var(--ligher-bg-color);
-  color: var(--text-color);
-  padding: 40px 0px 20px 0px;
-}
-
-.footer-social-icon {
-  height: 32px;
-  width: 32px;
-  margin: 15px;
 }
