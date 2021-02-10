@@ -1,3 +1,20 @@
+:root {
+  --darker-bg-color: #0a0a0a;
+  --ligher-bg-color: #191919;
+  --yellow-bg-color: #f3cf26;
+  --text-color: #dddddd;
+  --update-text-color: #bbbbbb;
+  --footer-color: #ffffff;
+  --nav-selected-color: #ffffff;
+  --tagline-color: #FDF43F;
+  --faq-question-color: #DDD45F;
+  --highlight-color: #DDD45F;
+  --remaining-packs-color: #ff8822;
+  --sold-out-color: #CC1414;
+  --landing-input-bg: #222222;
+  --landing-form-bg: #111111;
+}
+
 
 .center-content {
   display: flex;
@@ -115,7 +132,7 @@ a.nav-link-selected {
 }
 
 .navbar-scrolled {
-  background-color: #191919;
+  background-color: var(--ligher-bg-color);
 }
 
 .navbar-toggler {
@@ -142,22 +159,22 @@ a.nav-link-selected {
 
 
 .suncrash-content-1 {
-  background-color: #191919;
-  color: #dddddd;
+  background-color: var(--ligher-bg-color);
+  color: var(--text-color);
 }
 
 .suncrash-content-1 h3 {
-  color: #dddddd;
+  color: var(--text-color);
 }
 
 .suncrash-content-2 {
-  background-color: #f3cf26;
-  color: #191919;
+  background-color: var(--yellow-bg-color);
+  color: var(--ligher-bg-color);
 }
 
 .suncrash-content-3 {
-  background-color: #333333;
-  color: #dddddd;
+  background-color: var(--darker-bg-color);
+  color: var(--text-color);
 }
 
 .suncrash-content-2 a {
@@ -168,7 +185,8 @@ a.nav-link-selected {
 
 
 .subscribe-area {
-  background-color: #f3cf26;
+  background-color: var(--darker-bg-color);
+  color: var(--text-color);
 }
 
 .email-label {
@@ -203,7 +221,7 @@ a.nav-link-selected {
 }
 
 .subscribe-checkbox-label {
-  color: black;
+  color: var(--text-color);
   padding-top: 5px;
   font-size: 20px;
 }
@@ -218,8 +236,8 @@ a.nav-link-selected {
 }
 
 .subscribe-button {
-  background-color: #191919;
-  color: #f3cf26;
+  background-color: #dddddd;
+  color: #000000;
   border: none;
   padding: 3px 40px;
   text-align: center;
@@ -320,8 +338,8 @@ h5.blog-title {
 
 
 .footer {
-  background-color: #191919;
-  color: #dddddd;
+  background-color: var(--ligher-bg-color);
+  color: var(--text-color);
   padding: 40px 0px 20px 0px;
 }
 
